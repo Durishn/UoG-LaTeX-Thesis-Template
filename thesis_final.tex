@@ -1,0 +1,79 @@
+%%
+%% University of Guelph Thesis Template
+%% Derived from https://github.com/jestark/LaTeXStyle
+%% and heavily revised to better match the 2020 standards
+%% author: Nic Durish (https://github.com/Durishn)
+%%
+\documentclass[final, onehalf]{ugthesis_ND}
+
+\newcommand\mynotes[1]{\textcolor{red}{#1}}
+\newcommand\rednotes[1]{\textcolor{red}{#1}}
+\newcommand\bluenotes[1]{\textcolor{blue}{#1}}
+\newcommand\inlinecode[1]{\texttt{{#1}}}
+
+
+\title{Changing the world one step at a time: your awesome thesis title!}
+\author{First Last}
+\advisor{Dr. Great Advisor} % or <Adviser's Name \\ Co-Adviser's Name>
+\degree{Master of Mastery}
+\degreeprogram{Degree Program}
+\degreemonth{Month}
+
+\degreeyear{1234}
+%\thesissubject{<subject>}
+%\thesiskeywords{<keywords>}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\usepackage{appendix}
+\usepackage[margin=1in]{geometry}
+\usepackage{changepage}
+
+\usepackage{makecell}
+\usepackage[labelfont=bf, textfont=bf]{caption}
+
+
+%%ADDED BY NIC
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage{apalike}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{textcomp}
+\def\citepunct{; \penalty\citepunctpenalty}
+
+%\usepackage{<additional packages>}
+\graphicspath{ {images/} }
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\clearpage
+
+\input{sections/frontmatter/abstract}
+\input{sections/frontmatter/dedication}
+\input{sections/frontmatter/acknowledgements}
+
+\chapterstyle{dash}
+\tableofcontents
+\listoftables
+\listoffigures
+
+\mainmatter
+%%\input{sections/chapters/1_introduction}
+\input{sections/chapters/2_litreview}
+\input{sections/chapters/3_methods}
+\input{sections/chapters/4_results}
+\input{sections/chapters/5_conclusion}
+
+%% <style>: Common values are: IEEEtran (IEEE transactions format) and apalike
+%% (APA format)
+%\bibliographystyle{ieeetran}
+\bibliographystyle{apalike}
+\bibliography{bibliography/msc}
+
+\include{sections/appendix}
+
+\end{document}

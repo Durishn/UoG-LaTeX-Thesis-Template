@@ -1,0 +1,31 @@
+%!TEX root = ../../thesis.tex
+
+\chapter{Design process: methodologies}
+\label{cha:methods}
+
+Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Elementum pulvinar etiam non quam lacus suspendisse faucibus. Sit amet facilisis magna etiam tempor. Amet consectetur adipiscing elit ut aliquam. Varius sit amet mattis vulputate enim nulla. Nibh cras pulvinar mattis nunc sed blandit libero volutpat. Cursus sit amet dictum sit. Curabitur gravida arcu ac tortor dignissim convallis aenean et. Malesuada proin libero nunc consequat interdum varius sit amet. Integer eget aliquet nibh praesent. Volutpat consequat mauris nunc congue nisi vitae suscipit. Proin nibh nisl condimentum id. Urna duis convallis convallis tellus id interdum. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Ornare suspendisse sed nisi lacus sed. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse.
+
+
+\begin{itemize}
+\item Phase 1 – Test
+\item Phase 2 – Test
+\item Phase 3 – Test
+\item Phase 4 – Test
+\item Phase 5 - Test
+\item Phase 6 – Test
+\end{itemize}
+
+\subsection{Equations}
+\label{sec:eq}
+
+Sometimes you need to use inline equations like so: $Y$ as a mathematical function of one (univariate) or more (multivariate) $X$ variables, which can be generalized as follows:
+
+\begin{equation}
+\label{eq:reg}
+Y = \beta1 + \beta2X + \epsilon
+\end{equation}
+
+
+where the coefficients, $\beta1$ is the intercept and $\beta2$ is the slope, and $\epsilon$ is the error term, the part of Y the regression model is unable to explain. Through contrasting models with differing coefficients for our various explanatory variables $X$ in Equation~\ref{eq:reg}, we can identify indicators that better model our criterion variables. However, before any linear regression analyses could be performed, we first needed to check a few key assumptions, namely: large enough sample size, removal of superficial outliers, normal distribution, and homoscedasticity.
+
+While there is no specific minimum for the sample size, ideally this value is at least 25 cases per independent variable. Each collection of variables satisfied this requirement except for performing linear regressions over each month, as only 8 months’ worth of data were collected. Outliers were manually identified with the aid of software tools such as the aforementioned box-whisker plots and associated quartile analyses. Points that existed outside of Tukey’s fence, defined as values below $Q\textsubscript{1}-1.5(Q\textsubscript{3}-Q\textsubscript{1})$ or above $Q\textsubscript{3}+1.5(Q\textsubscript{3}-Q\textsubscript{1})$ were identified and examined. In the case of environmental variables, all of these measurements were discarded. For our RIAI data, however, values beneath the lower fence of download and upload speeds, and above the upper fence of RTT, represented periods where the internet was inaccessible and were therefore included within our analyses. 

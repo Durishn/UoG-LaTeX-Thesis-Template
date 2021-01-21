@@ -1,0 +1,9 @@
+.DS_Store
+thesis_final.fdb*
+thesis_final.fls
+thesis_final.log
+thesis_final.synctex.gz
+thesis_final.out
+thesis_final.aux
+*.run.*
+*.bbl
